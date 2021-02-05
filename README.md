@@ -6,6 +6,6 @@ Just click anywhare to draw random image, and check if you're on the same wavele
 
 HAVE FUN!
 
-https://kamquoss.github.io/Fangor/
+https://kamquoss.github.io/Fangor/index.html
 
 [My image](https://github.com/KamQuoss/Fangor/blob/master/img/Fangor_page.png)
