@@ -25,7 +25,7 @@ p {
 .image-border {
   z-index: -1;
   box-shadow: 0 3px 5px 0 rgb(34 36 38 / 15%);
-  border: 2px solid rgb(231, 231, 231);
+  border: 2px solid rgb(228, 228, 228);
   width: 700px;
   height: 700px;
   margin: auto auto;
