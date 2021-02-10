@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,900;1,500&display=swap");
 
+:root {
+  --transition-time: 2400ms;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -35,6 +39,7 @@ p {
   top: 0;
   bottom: 0;
 }
+
 .image-content {
   z-index: -2;
   clip-path: inset(0px 0px);
@@ -54,17 +59,36 @@ p {
   opacity: 1;
 }
 .fade-in-out {
-  animation: fade 1s ease-in-out;
+  animation: transitionAnimation var(--transition-time) linear;
 }
 
-@keyframes fade {
+@keyframes transitionAnimation {
   0% {
     opacity: 1;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.25;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+    margin-block-start: 0.25rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .image-border {
+    width: 400px;
+    height: 400px;
+    margin: 12rem auto auto auto;
   }
 }

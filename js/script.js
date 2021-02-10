@@ -1,4 +1,5 @@
 let image = document.querySelector(".image-content"),
+transitionTime = 2400,
 backgrounds = [
  "rgba(99, 177, 252, 1) 0%, rgba(77, 136, 202, 1) 10%, rgba(9, 9, 121, 1) 16%, rgba(6, 0, 55, 1) 31%, rgba(9, 9, 121, 1) 46%,  rgba(99, 8, 235, 1) 47%, rgba(255, 255, 255, 1) 50%",
  "rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 11%, rgba(16, 108, 213, 1) 20%, rgba(21, 44, 75, 1) 24%, rgba(48, 82, 38, 1) 35%, rgba(48, 82, 38, 1) 54%, rgba(114, 150, 6, 1) 58%, rgba(227, 250, 79, 1) 62%, rgba(255, 251, 235, 1) 68%, rgba(255, 251, 235, 1) 100%",
@@ -25,8 +26,8 @@ const removeFading = () => {
 
 const changeImage = () => {    
     image.classList.add("fade-in-out");
-    window.setTimeout(chanegeBg, 500);
-    window.setTimeout(removeFading, 1000);
+    window.setTimeout(chanegeBg, transitionTime/2);
+    window.setTimeout(removeFading, transitionTime+10);
 }
 
 window.document.addEventListener("click", changeImage)
